@@ -1,0 +1,138 @@
+-- MySQL dump 8.22
+--
+-- Host: localhost    Database: documents
+---------------------------------------------------------
+-- Server version	3.23.55-nt
+
+--
+-- Table structure for table '_souscategories'
+--
+
+DROP TABLE IF EXISTS _souscategories;
+CREATE TABLE _souscategories (
+  id_souscategorie int(11) NOT NULL default '0',
+  id_document int(11) NOT NULL default '0',
+  PRIMARY KEY  (id_souscategorie,id_document)
+) TYPE=MyISAM;
+
+/*!40000 ALTER TABLE _souscategories DISABLE KEYS */;
+
+--
+-- Dumping data for table '_souscategories'
+--
+
+
+LOCK TABLES _souscategories WRITE;
+INSERT INTO _souscategories VALUES (1,1),(4,1),(4,2),(6,1),(23,2);
+
+/*!40000 ALTER TABLE _souscategories ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table 'categories'
+--
+
+DROP TABLE IF EXISTS categories;
+CREATE TABLE categories (
+  id_categorie int(11) NOT NULL auto_increment,
+  nom_categorie varchar(255) NOT NULL default '',
+  desc_categorie text,
+  PRIMARY KEY  (id_categorie)
+) TYPE=MyISAM;
+
+/*!40000 ALTER TABLE categories DISABLE KEYS */;
+
+--
+-- Dumping data for table 'categories'
+--
+
+
+LOCK TABLES categories WRITE;
+INSERT INTO categories VALUES (1,'DISTRIBUTION',NULL),(2,'SOCIETES',NULL),(13,'MARCHES',NULL),(14,'FAITS/TENDANCES',NULL);
+
+/*!40000 ALTER TABLE categories ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table 'documents'
+--
+
+DROP TABLE IF EXISTS documents;
+CREATE TABLE documents (
+  id_document int(11) NOT NULL auto_increment,
+  nom_document varchar(255) NOT NULL default '',
+  desc_document varchar(255) NOT NULL default '',
+  date_parution_document date NOT NULL default '0000-00-00',
+  date_archivage_document date default '0000-00-00',
+  source_document varchar(255) NOT NULL default '',
+  archive_document tinyint(1) NOT NULL default '0',
+  numero_document int(11) default '0',
+  motscles_document varchar(255) default '',
+  PRIMARY KEY  (id_document)
+) TYPE=MyISAM;
+
+/*!40000 ALTER TABLE documents DISABLE KEYS */;
+
+--
+-- Dumping data for table 'documents'
+--
+
+
+LOCK TABLES documents WRITE;
+
+/*!40000 ALTER TABLE documents ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table 'fichiers'
+--
+
+DROP TABLE IF EXISTS fichiers;
+CREATE TABLE fichiers (
+  id_fichier int(11) NOT NULL auto_increment,
+  adresse_fichier text,
+  lien_fichier varchar(100) default '',
+  extension_fichier varchar(10) default '',
+  id_document int(11) NOT NULL default '0',
+  nom_fichier varchar(100) NOT NULL default '',
+  PRIMARY KEY  (id_fichier)
+) TYPE=MyISAM;
+
+/*!40000 ALTER TABLE fichiers DISABLE KEYS */;
+
+--
+-- Dumping data for table 'fichiers'
+--
+
+
+LOCK TABLES fichiers WRITE;
+
+/*!40000 ALTER TABLE fichiers ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table 'souscategories'
+--
+
+DROP TABLE IF EXISTS souscategories;
+CREATE TABLE souscategories (
+  id_souscategorie int(11) NOT NULL auto_increment,
+  nom_souscategorie varchar(255) NOT NULL default '',
+  desc_souscategorie text,
+  id_categorie int(11) NOT NULL default '0',
+  PRIMARY KEY  (id_souscategorie)
+) TYPE=MyISAM;
+
+/*!40000 ALTER TABLE souscategories DISABLE KEYS */;
+
+--
+-- Dumping data for table 'souscategories'
+--
+
+
+LOCK TABLES souscategories WRITE;
+INSERT INTO souscategories VALUES (1,'Auchan',NULL,1),(4,'Leclerc',NULL,1),(6,'Carrefour',NULL,1),(8,'Casino',NULL,1),(23,'Autres enseignes',NULL,1);
+
+/*!40000 ALTER TABLE souscategories ENABLE KEYS */;
+UNLOCK TABLES;
+

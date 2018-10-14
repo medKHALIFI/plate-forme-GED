@@ -1,0 +1,45 @@
+BODY {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; MARGIN: 0px; COLOR: #000080; FONT-FAMILY: Verdana, Arial; BACKGROUND-COLOR: white
+}
+A{
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #2f5a84; FONT-STYLE: normal; FONT-FAMILY: Verdana,Arial,Helvetica; FONT-VARIANT: normal; TEXT-DECORATION: none
+}
+A.menu{
+	FONT SIZE:11px; FONT-FAMILY: Verdana, Arial; Color:#cc3333; FONT-WEIGHT: bold;
+}
+A.titre {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #2f5a84; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+A.txtGris {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #555555; FONT-STYLE: normal; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+A.mininews {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #2f5a84; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+TD {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000080; FONT-FAMILY: Verdana
+}
+.titrecel {
+	BACKGROUND-COLOR: #f2f5f7; 	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #2f5a84; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+TH {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000080; FONT-FAMILY: Verdana
+}
+.CaseLibD {
+	BORDER-RIGHT: #c0c0c0 0.5pt solid; FONT-WEIGHT: bold; FONT-SIZE: 11px; BORDER-LEFT: #c0c0c0 0.5pt solid; COLOR: #000080; BORDER-BOTTOM: #c0c0c0 0.5pt solid; FONT-FAMILY: Verdana, Helvetica, Futura; BACKGROUND-COLOR: #fcdab9; TEXT-ALIGN: center; text-valign: center
+}
+.CaseChampG {
+	BORDER-RIGHT: #c0c0c0 0.5pt solid; FONT-WEIGHT: bold; FONT-SIZE: 11px; BORDER-LEFT: #c0c0c0 0.5pt solid; COLOR: #000000; BORDER-BOTTOM: #c0c0c0 0.5pt solid; FONT-FAMILY: Verdana, Helvetica, Futura; BACKGROUND-COLOR: #efefef; TEXT-ALIGN: center; text-valign: center
+}
+.CaseLibM {
+	BORDER-RIGHT: #c0c0c0 0.5pt solid; BORDER-TOP: #c0c0c0 0.5pt solid; FONT-WEIGHT: bold; FONT-SIZE: 11px; BORDER-LEFT: #c0c0c0 0.5pt solid; COLOR: #000080; BORDER-BOTTOM: #c0c0c0 0.5pt solid; FONT-FAMILY: Verdana, Helvetica, Futura; BACKGROUND-COLOR: #fcdab9; TEXT-ALIGN: center; text-valign: center
+}
+.CaseChampM {
+	BORDER-RIGHT: #c0c0c0 0.5pt solid; BORDER-TOP: #c0c0c0 0.5pt solid; FONT-SIZE: 11px; BORDER-LEFT: #c0c0c0 0.5pt solid; COLOR: #000000; BORDER-BOTTOM: #c0c0c0 0.5pt solid; FONT-FAMILY: Verdana, Helvetica, Futura; BACKGROUND-COLOR: #efefef; TEXT-ALIGN: center; text-valign: center
+}
+.categories {
+	BORDER-RIGHT: #c0c0c0 0.5pt solid; BORDER-TOP: #c0c0c0 0.5pt solid; FONT-WEIGHT: bold; FONT-SIZE: 11px; BORDER-LEFT: #c0c0c0 0.5pt solid; COLOR: #000080; BORDER-BOTTOM: #c0c0c0 0.5pt solid; FONT-FAMILY: Verdana, Helvetica, Futura; BACKGROUND-COLOR: #fcdab9;
+}
+.souscategories {
+	BORDER-RIGHT: #c0c0c0 0.5pt solid; BORDER-TOP: #c0c0c0 0.5pt solid; FONT-SIZE: 11px; BORDER-LEFT: #c0c0c0 0.5pt solid; COLOR: #000000; BORDER-BOTTOM: #c0c0c0 0.5pt solid; FONT-FAMILY: Verdana, Helvetica, Futura; BACKGROUND-COLOR: #efefef;
+}
